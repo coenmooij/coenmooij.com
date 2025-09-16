@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'cm-header',
-  templateUrl: 'header.component.html'
+  templateUrl: 'header.component.html',
+  styleUrl: 'header.component.scss'
 })
 export class HeaderComponent {}
