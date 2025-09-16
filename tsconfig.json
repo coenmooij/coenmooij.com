@@ -15,7 +15,13 @@
     "paths": {
       "@coenmooij/pages": [
         "./src/pages"
-      ]
+      ],
+      "@coenmooij/layout": [
+        "./src/layout"
+      ],
+      "@coenmooij/ui": [
+        "./src/ui"
+      ],
     }
   },
   "angularCompilerOptions": {
