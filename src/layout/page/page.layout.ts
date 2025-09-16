@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FooterComponent, HeaderComponent, ImageComponent, PageComponent } from '@coenmooij/ui';
-import { RouterOutlet } from '@angular/router';
+import { BannerComponent, FooterComponent, HeaderComponent, ImageComponent, PageComponent } from '@coenmooij/ui';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'cm-page-layout',
@@ -10,6 +10,8 @@ import { RouterOutlet } from '@angular/router';
     FooterComponent,
     PageComponent,
     ImageComponent,
+    BannerComponent,
+    RouterLink,
   ],
   templateUrl: 'page.layout.html',
 })
