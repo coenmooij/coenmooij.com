@@ -1,1 +1,8 @@
-<img class="image" [src]="url" [alt]="description">
+<img
+  class="image"
+  [class.image--inline]="isInline"
+  [class.image--fullwidth]="isFullWidth"
+  [class.image--rounded]="isRounded"
+  [src]="url"
+  [alt]="description"
+>

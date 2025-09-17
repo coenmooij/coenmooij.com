@@ -18,6 +18,24 @@ body {
   line-height: 1.7;
   font-family: 'Roboto', sans-serif;
   height: 100%;
+  position: relative;
+  background-color: #f7f7f7;
+
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    overflow: hidden;
+    background:  url('/digitalvibe-icon.png') repeat-y center;
+    background-size: 3.3rem;
+    height: 100vh;
+    width: max(0px, calc(100vw - 1200px) / 2);
+    top: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
 }
 
 h1,h2,h3,h4,h5,h6 {

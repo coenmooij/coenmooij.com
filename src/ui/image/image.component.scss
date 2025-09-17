@@ -1,3 +1,14 @@
 .image {
-  height: 1em;
+
+  &--rounded {
+    border-radius: 5px;
+  }
+
+  &--fullwidth {
+    width: 100%;
+  }
+
+  &--inline {
+    height: 1em;
+  }
 }

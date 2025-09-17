@@ -8,4 +8,7 @@ import { Component, Input } from '@angular/core';
 export class ImageComponent {
   @Input({required: true}) public url!: string;
   @Input({required: true}) public description!: string;
+  @Input() public isInline: boolean = false;
+  @Input() public isFullWidth: boolean = false;
+  @Input() public isRounded: boolean = false;
 }

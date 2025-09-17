@@ -2,13 +2,13 @@
   <cm-banner slot="header">Warning! Work in Progress. Come back later.</cm-banner>
   <cm-header slot="header"><a routerLink="/">
     <!--    TODO : Brand better clickable-->
-    <cm-image url="/digitalvibe-icon.png" description="Digital Vibe Icon"></cm-image>
+    <cm-image [isInline]="true" url="/digitalvibe-icon.png" description="Digital Vibe Icon"></cm-image>
   </a></cm-header>
 
   <router-outlet></router-outlet>
 
   <cm-footer slot="footer">Powered by <a href="https://digitalvibe.nl" target="_blank">Digital Vibe
-    <cm-image url="/digitalvibe-icon.png" description="Digital Vibe Icon"></cm-image>
+    <cm-image [isInline]="true" url="/digitalvibe-icon.png" description="Digital Vibe Icon"></cm-image>
   </a>
   </cm-footer>
 </cm-page>
