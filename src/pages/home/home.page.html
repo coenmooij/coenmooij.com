@@ -1,18 +1,20 @@
 <cm-section>
 
-  <cm-feature-card featureTitle="Welcome!" subtitle="Personal Portfolio">
-    <p>Here I showcase a bunch of stuff. It ranges from barely started to polished. There's also a lot of stuff that was
-      either an experiment, priorities shifted, or lessons learned along the way. Projects are never really abandonded,
+  <cm-feature-card featureTitle="Welcome to my personal portfolio!">
+    <p>
+      Here I showcase a bunch of stuff. It ranges from barely started to polished. There's also a lot of stuff that was
+      either an experiment, priorities shifted, or lessons learned along the way. Projects are never really abandoned,
       but an abundance of ideas (not necessarily good ones) combined with scarcity of time creates the
-      podium/graveyard.</p>
-    <p>If you want to work with me, send me a message on {{ 'coen@digitalvibe.com' }} or </p>
+      podium/graveyard.
+    </p>
+    <p>If you want to work with me, send me a message on {{ 'coen@digitalvibe.com' }} or contact me on LinkedIn.</p>
     <p>WebDev, creative, design, games, music. multi modal.</p>
 
 
     <ng-container slot="image">
       <cm-image [isFullWidth]="true" [isRounded]="true" url="coenmooij.jpg" description="Coen Mooij"></cm-image>
-      <caption>Coen&nbsp;Mooij</caption>
-      <br>
+      <strong>Coen&nbsp;Mooij</strong>
+      <p>Creator</p>
       <cm-icon icon="linkedin" set="brands"></cm-icon>
       <cm-icon icon="envelope" set="regular"></cm-icon>
     </ng-container>
@@ -77,6 +79,7 @@
       <ul>
         <li>Visual Design</li>
         <li>Toneelgroep Daghap</li>
+        <li>Product Design Philosophy</li>
       </ul>
       <cm-button slot="footer" [isFullWidth]="true" icon="arrow-right" color="red">Read more</cm-button>
     </cm-category-card>
