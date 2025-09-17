@@ -1,4 +1,4 @@
-<cm-section name="Introduction">
+<cm-section>
 
   <p>WebDev, creative, design, games, music. multi modal.</p>
 
@@ -8,19 +8,53 @@
 
 </cm-section>
 
-
-<cm-section name="Categories">
+<cm-section>
 
   <cm-bar>
-    <span>CV</span>
-    <span>Open Source</span>
-    <span>Side Projects</span>
-    <span>Music</span>
-    <span>Design</span>
-    <span>AI</span>
-    <span>Business</span>
-    <span>Casual Games</span>
-    <span>Serious Games</span>
+
+    <cm-category-card category="Curriculum Vitae">
+      <cm-icon slot="icon" set="solid" icon="address-card"></cm-icon>
+
+      <cm-button slot="footer" [isFullWidth]="true" link="/cv">Link to my CV</cm-button>
+
+    </cm-category-card>
+
+    <cm-category-card category="Open Source">
+      <cm-icon slot="icon" icon="laptop-code"></cm-icon>
+      <ul>
+        <li>StandardKit</li>
+        <li>nest-architect</li>
+        <li>SudokuKit</li>
+      </ul>
+    </cm-category-card>
+
+    <cm-category-card category="Music">
+      <cm-icon slot="icon" icon="music"></cm-icon>
+    </cm-category-card>
+    <cm-category-card category="SaaS Platforms">
+      <cm-icon slot="icon" icon="user-tie"></cm-icon>
+    </cm-category-card>
+
+
+    <cm-category-card category="Side Projects">
+      <cm-icon slot="icon" icon="lightbulb"></cm-icon>
+      <ul>
+        <li>Hermetic7.com</li>
+        <li>ikwilklaverjassen.nl</li>
+      </ul>
+    </cm-category-card>
+    <cm-category-card category="Games">
+      <cm-icon slot="icon" icon="gamepad"></cm-icon>
+    </cm-category-card>
+    <cm-category-card category="Design">
+      <cm-icon slot="icon" icon="palette"></cm-icon>
+    </cm-category-card>
+    <cm-category-card category="AI">
+      <cm-icon slot="icon" icon="robot"></cm-icon>
+    </cm-category-card>
+
+
+
   </cm-bar>
 
 </cm-section>

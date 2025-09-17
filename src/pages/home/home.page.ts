@@ -1,5 +1,12 @@
 import { Component } from '@angular/core';
-import { BarComponent, ImageComponent, SectionComponent } from '@coenmooij/ui';
+import {
+  BarComponent,
+  ButtonComponent,
+  CategoryCardComponent,
+  IconComponent,
+  ImageComponent,
+  SectionComponent,
+} from '@coenmooij/ui';
 
 @Component({
   selector: 'cm-home-page',
@@ -7,7 +14,11 @@ import { BarComponent, ImageComponent, SectionComponent } from '@coenmooij/ui';
     SectionComponent,
     BarComponent,
     ImageComponent,
+    IconComponent,
+    CategoryCardComponent,
+    ButtonComponent,
   ],
   templateUrl: 'home.page.html',
 })
-export class HomePage {}
+export class HomePage {
+}

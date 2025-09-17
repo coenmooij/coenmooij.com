@@ -5,3 +5,7 @@ export * from './image';
 export * from './banner';
 export * from './section';
 export * from './bar';
+export * from './card';
+export * from './category-card';
+export * from './icon';
+export * from './button';
