@@ -1,0 +1,15 @@
+.feature-card {
+  display: flex;
+  gap: 2.4rem;
+  padding: 2.4rem;
+  background-color: #f7f7f7;
+  box-shadow: 2px 2px 5px 2px rgba(0 0 0 / 17%);
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.feature-card__image {
+  min-width: 24rem;
+  padding: 0 2.4rem;
+  text-align: center;
+}

@@ -1,0 +1,11 @@
+<div class="feature-card">
+  <div class="feature-card__image">
+    <ng-content select="[slot=image]"></ng-content>
+  </div>
+  <div class="feature-card__body">
+    <h2 class="feature-card__title">{{ featureTitle }}</h2>
+    <div class="feature-card__body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

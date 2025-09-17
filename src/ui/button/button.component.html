@@ -1,4 +1,11 @@
-<button class="button" [class.button--fullwidth]="isFullWidth" [routerLink]="link">
-<!--  TODO : Icon slot-->
+<button
+  class="button button--{{ color }}"
+  [class.button--fullwidth]="isFullWidth"
+  [routerLink]="link"
+>
   <ng-content></ng-content>
+
+  <span *ngIf="icon" class="button__icon">
+    <cm-icon [icon]="icon"></cm-icon>
+  </span>
 </button>

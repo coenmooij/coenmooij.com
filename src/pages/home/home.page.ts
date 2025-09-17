@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {
   BarComponent,
   ButtonComponent,
-  CategoryCardComponent,
+  CategoryCardComponent, FeatureCardComponent,
   IconComponent,
   ImageComponent,
   SectionComponent,
@@ -17,6 +17,7 @@ import {
     IconComponent,
     CategoryCardComponent,
     ButtonComponent,
+    FeatureCardComponent,
   ],
   templateUrl: 'home.page.html',
 })

@@ -9,3 +9,4 @@ export * from './card';
 export * from './category-card';
 export * from './icon';
 export * from './button';
+export * from './feature-card';

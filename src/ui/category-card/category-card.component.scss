@@ -1,7 +1,7 @@
 .category_card {
-  min-width: 24rem;
+  min-width: 28rem;
   border-radius: 8px;
-  background-color: whitesmoke;
+  background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -9,17 +9,21 @@
 }
 
 .category_card__icon {
-  padding: 2.4rem 3.2rem 0;
+  padding: 1.6rem 2.4rem 0;
   font-size: 4.8rem;
   text-align: center;
 }
 
 .category_card__header {
-  padding: 1.2rem 1.6rem;
+  padding: 1rem 1.6rem;
   text-align: center;
 }
 
 .category_card__body {
   flex-grow: 1;
-  padding: 2.4rem;
+  padding: 1.6rem 2rem;
+}
+
+.category_card__footer {
+  padding: 0 2rem 2rem;
 }

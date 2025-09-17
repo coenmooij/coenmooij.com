@@ -1,10 +1,23 @@
 <cm-section>
 
-  <p>WebDev, creative, design, games, music. multi modal.</p>
+  <cm-feature-card featureTitle="Welcome!" subtitle="Personal Portfolio">
+    <p>Here I showcase a bunch of stuff. It ranges from barely started to polished. There's also a lot of stuff that was
+      either an experiment, priorities shifted, or lessons learned along the way. Projects are never really abandonded,
+      but an abundance of ideas (not necessarily good ones) combined with scarcity of time creates the
+      podium/graveyard.</p>
+    <p>If you want to work with me, send me a message on {{ 'coen@digitalvibe.com' }} or </p>
+    <p>WebDev, creative, design, games, music. multi modal.</p>
 
-  <cm-image [isRounded]="true" url="coenmooij.jpg" description="Coen Mooij"></cm-image>
 
-  <caption>Me</caption>
+    <ng-container slot="image">
+      <cm-image [isFullWidth]="true" [isRounded]="true" url="coenmooij.jpg" description="Coen Mooij"></cm-image>
+      <caption>Coen&nbsp;Mooij</caption>
+      <br>
+      <cm-icon icon="linkedin" set="brands"></cm-icon>
+      <cm-icon icon="envelope" set="regular"></cm-icon>
+    </ng-container>
+  </cm-feature-card>
+
 
 </cm-section>
 
@@ -12,47 +25,98 @@
 
   <cm-bar>
 
-    <cm-category-card category="Curriculum Vitae">
+    <cm-category-card category="Career">
       <cm-icon slot="icon" set="solid" icon="address-card"></cm-icon>
 
-      <cm-button slot="footer" [isFullWidth]="true" link="/cv">Link to my CV</cm-button>
+      <ul>
+        <li>Digital Vibe</li>
+        <li>Mooij Media</li>
+        <li>CV</li>
+      </ul>
 
+      <cm-button slot="footer" [isFullWidth]="true" icon="arrow-right" color="pink">Read more</cm-button>
+    </cm-category-card>
+
+    <cm-category-card category="SaaS Platforms">
+      <cm-icon slot="icon" icon="user-tie"></cm-icon>
+
+      <ul>
+        <li>Werfy</li>
+        <li>JijBestelt</li>
+        <li>StyleScout</li>
+      </ul>
+
+      <cm-button slot="footer" [isFullWidth]="true" icon="arrow-right" color="orange">Read more</cm-button>
     </cm-category-card>
 
     <cm-category-card category="Open Source">
       <cm-icon slot="icon" icon="laptop-code"></cm-icon>
       <ul>
-        <li>StandardKit</li>
+        <li>StandardKit UI</li>
         <li>nest-architect</li>
         <li>SudokuKit</li>
       </ul>
-    </cm-category-card>
-
-    <cm-category-card category="Music">
-      <cm-icon slot="icon" icon="music"></cm-icon>
-    </cm-category-card>
-    <cm-category-card category="SaaS Platforms">
-      <cm-icon slot="icon" icon="user-tie"></cm-icon>
+      <cm-button slot="footer" [isFullWidth]="true" icon="arrow-right" color="blue">Read more</cm-button>
     </cm-category-card>
 
 
     <cm-category-card category="Side Projects">
       <cm-icon slot="icon" icon="lightbulb"></cm-icon>
       <ul>
-        <li>Hermetic7.com</li>
-        <li>ikwilklaverjassen.nl</li>
+        <li>7 Hermetic Laws</li>
+        <li>Klaverjas Score Tracker</li>
+        <li>Sudoku Online</li>
       </ul>
+
+      <cm-button slot="footer" [isFullWidth]="true" icon="arrow-right" color="neutral">Read more</cm-button>
+    </cm-category-card>
+
+
+    <cm-category-card category="Design">
+      <cm-icon slot="icon" icon="palette"></cm-icon>
+      <ul>
+        <li>Visual Design</li>
+        <li>Toneelgroep Daghap</li>
+      </ul>
+      <cm-button slot="footer" [isFullWidth]="true" icon="arrow-right" color="red">Read more</cm-button>
+    </cm-category-card>
+    <cm-category-card category="Film & Video">
+      <cm-icon slot="icon" icon="film"></cm-icon>
+      <ul>
+        <li>Toneelgroep Daghap</li>
+        <li>AI Indie Film</li>
+        <li>Random Stuff</li>
+      </ul>
+      <cm-button slot="footer" [isFullWidth]="true" icon="arrow-right" color="brown">Read more</cm-button>
+    </cm-category-card>
+    <cm-category-card category="Music">
+      <cm-icon slot="icon" icon="music"></cm-icon>
+      <ul>
+        <li>Dusty Dreams</li>
+        <li>YouTube Covers</li>
+        <li>Corona Sessions</li>
+      </ul>
+      <cm-button slot="footer" [isFullWidth]="true" icon="arrow-right" color="green">Read more</cm-button>
     </cm-category-card>
     <cm-category-card category="Games">
       <cm-icon slot="icon" icon="gamepad"></cm-icon>
-    </cm-category-card>
-    <cm-category-card category="Design">
-      <cm-icon slot="icon" icon="palette"></cm-icon>
-    </cm-category-card>
-    <cm-category-card category="AI">
-      <cm-icon slot="icon" icon="robot"></cm-icon>
+      <ul>
+        <li>Cult Clicker 33</li>
+        <li>Addix</li>
+        <li>Cycle7</li>
+      </ul>
+      <cm-button slot="footer" [isFullWidth]="true" icon="arrow-right" color="dark">Read more</cm-button>
     </cm-category-card>
 
+    <cm-category-card category="Social">
+      <cm-icon slot="icon" icon="users"></cm-icon>
+      <ul>
+        <li>AI Influencer Experiment</li>
+        <li>Personal Development Circle</li>
+      </ul>
+
+      <cm-button slot="footer" [isFullWidth]="true" icon="arrow-right" color="yellow">Read more</cm-button>
+    </cm-category-card>
 
 
   </cm-bar>

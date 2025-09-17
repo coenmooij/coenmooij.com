@@ -8,9 +8,9 @@
 
 html {
   font-size: 62.5%; // 1rem = 10px
-  background-color: whitesmoke;
   text-rendering: optimizeLegibility;
   height: 100%;
+  background-color: #f7f7f7;
 }
 
 body {
@@ -18,16 +18,14 @@ body {
   line-height: 1.7;
   font-family: 'Roboto', sans-serif;
   height: 100%;
-  position: relative;
-  background-color: #f7f7f7;
 
 
   &::before, &::after {
     content: '';
-    position: absolute;
+    position: fixed;
     overflow: hidden;
-    background:  url('/digitalvibe-icon.png') repeat-y center;
-    background-size: 3.3rem;
+    background: url('/digitalvibe-icon.png') repeat-y center;
+    background-size: 3.6rem;
     height: 100vh;
     width: max(0px, calc(100vw - 1200px) / 2);
     top: 0;
@@ -38,10 +36,11 @@ body {
   }
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
   margin: 0;
   font-family: 'Roboto Mono', monospace;
+  text-wrap: balance;
 }
 
 a {
