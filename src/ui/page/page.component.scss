@@ -7,6 +7,10 @@
   margin: 0 auto;
   padding: 2.4rem;
   gap: 1.6rem;
+
+  @media(max-width: 480px) {
+    padding: 0;
+  }
 }
 
 .page__header {
@@ -20,6 +24,14 @@
   background-color: white;
   border-radius: 8px;
   padding: 2.4rem 3.2rem;
+
+  @media(max-width: 480px) {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border: none;
+    padding: 0;
+  }
 }
 
 .page__footer {
