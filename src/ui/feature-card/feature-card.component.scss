@@ -1,12 +1,15 @@
+@use '@coenmooij/colors';
+
 .feature-card {
   display: flex;
   gap: 2.4rem;
   padding: 2.4rem;
-  background-color: #f7f7f7;
-  box-shadow: 2px 2px 5px 2px rgba(0 0 0 / 17%);
+  //background-color: colors.$background-white;
+  //box-shadow: 2px 2px 5px 2px rgba(0 0 0 / 17%);
   border-radius: 8px;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 
   @media(max-width: 480px) {
     border-radius: 0;

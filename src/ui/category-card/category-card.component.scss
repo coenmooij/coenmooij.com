@@ -1,11 +1,18 @@
+@use '@coenmooij/borders';
+@use '@coenmooij/colors';
+
 .category_card {
   min-width: 28rem;
-  border-radius: 8px;
-  background-color: #f7f7f7;
+  border-radius: borders.$radius-l;
+  background-color: colors.$background-white;
   display: flex;
   flex-direction: column;
   height: 100%;
-  box-shadow: 2px 2px 5px 2px rgba( 0 0 0 / 17%);
+  box-shadow: 2px 2px 5px 2px colors.$shadow;
+
+  @media(max-width: 480px) {
+    border-radius: 0;
+  }
 }
 
 .category_card__icon {
